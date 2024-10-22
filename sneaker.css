@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: black;
+    padding: 2px 20px;
+    grid-template-areas: 12px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 20px;
+        color: white;
+    }
+
+    img {
+        width: 5%;
+    }
+}
+
+nav div {
+    display: flex;
+    color: orange;
+    padding: 10px;
+
+    input {
+        border: 0;
+        outline: 0;
+
+    }
+}
+
+nav div button {
+    padding: 5px;
+    color: orangered;
+    border: 0;
+    /* border-radius: 5px; */
+    cursor: pointer;
+
+}
+
+.hero {
+    padding: 10px;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(black , rgba(0, 128, 0, 0.337)) ,url(./Loreal_Salon.jpg); 
+    h1 {
+        font-size: 8rem;
+        color: aliceblue;
+        margin-bottom: px;
+    }
+
+    p {
+       font-size: 1.5Rem;
+       font-style: italic;
+       color: aliceblue;
+    }
+    
+
+    button {
+      background-color: transparent;
+      border: 2 solid white;
+      padding: 10px 20px;
+      margin-inline: 10px;
+      width: 200px;
+      cursor: pointer;
+      color: white;
+      font-size: 1.1rem;
+    }
+}
+section{
+    padding: 30px 50px;
+    h4{
+        text-align: center;
+        font-size: 1rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+}
+.features .container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.features .reasons{
+    width: 40%;
+}
+.features .reason{
+    margin-bottom: 12px;
+}
+.features .features_image{
+    width: 35%;
+    height: 500px;
+    background-image: url(./Loreal_Salon.jpg);
+    background-size: cover ;
+    background-position: center;
+    border-radius: 10px;
+}
+.reason{
+    font-size: 1.7rem;
+    margin-bottom: 7px;
+}
+.reason div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reason div i{
+    font-size: 1.7rem;
+}
+/* end of features */
+
+.services{
+    background: linear-gradient(50deg, rgba(255, 0, 0, 0.269),rgba(0, 0, 0, 0.237));
+    h2, h4 {
+        color: white;
+    }
+    .card{
+        width: 35%;
+        height: 60vh;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+.gal1{
+    background-image: url(./Loreal_Salon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gal2 {
+    background-image: url(./salon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gal3{
+    background-image: url(../all/room.image.avif);
+    background-size: cover;
+    /* background-position: center; */
+}
+.gal4{
+    background-image: url(./Loreal_Salon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(165, 42, 42, 0.557), rgba(0, 0, 0, 0.074));
+    opacity: -1;
+    transition: 1s;
+}
+.card:hover div{
+    opacity: 1;
+}
+.testimonial{
+    height: fit-content;
+    padding: 100px 20px;
+  }
+  
+  .testimonial .review img{
+    width: 30px;
+    height: 30px;
+  
+  }
+  .testimonial .review div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .testimonial .review{
+    width: 30%;
+    padding: 10px;
+    border-radius: 9px;
+    height: fit-content;
+    box-shadow: 3px 3px 9px rgb(250, 160, 122);
+    transition: 1s;
+  }
+  .testimonial .review p{
+    font-size: 13px;
+  }
+  
+  .testimonial .container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .testimonial .review:hover{
+    transform: translateY(-10px);
+    
+  }
+
+/*  */
+
+.contact{
+    /* background-image:  url(../all/perfume-8032808_640.webp); */
+    background: linear-gradient(50deg rgba(0, 0, 255, 0.427) rgba(0, 128, 0, 0.354) );
+}
+
+.contact .mature{
+    padding: 10px;
+    display: flex;
+    /* gap: 10px; */
+    margin-bottom: 2px;
+    justify-content: space-between;
+    
+
+    h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    p{
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+}
+.mature{
+    flex: grow 1; 
+}
+.mature .container2{
+    display: flex;
+    flex: grow 1; 
+    
+    
+    h4{
+        font-size: 40px;
+    }
+}
